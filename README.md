@@ -14,11 +14,16 @@ Acesse o [link](https://drive.google.com/open?id=1swg47RM-ScyB8wibqxiXi5v506OUtg
 
 Depois é só bootar pelo pendrive² e ao logar o ambiente de desenvolvimento estaŕá pronto para uso.
 
+Porém, não deixe de fazer o update/updgrade do Mint. Faça isso antes da aula:
+
+Atualize os repositórios do Linux Mint com o comando: sudo apt-get update 
+Atualize o Linux Mint com o comando: sudo apt-get upgrade 
+
 ¹ mfrata: estou tentando encontrar uma forma de reduzir o tamanho da imagem. O tamanho ocupado dela é de apenas 5.6GB, entretanto ela ocupa 16GB descompacatada por causa do tamanho do dispositivo que ela foi gravada originalmente.
 
 ² Utilizar USB 3.0. Se não tiver, o sistema poderá ficar lento.
 
-### 1.2 Instalação do CCS no Linux
+#### 1.2 Instalação do CCS no Linux
 
 Baixe o CCS  para o [linux](http://processors.wiki.ti.com/index.php/Download_CCS#Code_Composer_Studio_Version_8_Downloads). Siga as [instruções](http://software-dl.ti.com/ccs/esd/documents/ccsv8_linux_host_support.html#installation-instructions)¹ de acordo com a distribuição² instalada. 
 
