@@ -6,7 +6,7 @@ Repositório das aulas práticas.
 
 Será necessário o Code Composer Studio ([CCS](http://www.ti.com/tool/CCSTUDIO)) e o [git](https://git-scm.com/).
 
-Existem dois métodos para configurar o ambiente: 1.1) Pendrive Live com tudo configurado; 1.2) instalação no Linux.
+Existem dois métodos para configurar o ambiente: 1.1) Pendrive Live; 1.2) Instalação do CCS no Linux.
 
 #### 1.1 Pendrive Live
 
@@ -46,7 +46,7 @@ A interface gráfica travou no fim da instalação, porém a mesma foi concluíd
 
 `sudo apt install git`
 
-### 3 Clonando o repositorio
+### 3 Clonando o Repositorio
 
 `git clone https://github.com/eel7515/rssf-iot --shallow-submodules --recurse-submodules`
  
