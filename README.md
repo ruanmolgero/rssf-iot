@@ -2,9 +2,9 @@
 
 Repositório das aulas práticas.
 
-## 1. Ambiente de desenvolvimento
+## 1. Ambiente de Desenvolvimento
 
-Será necessário o Code Composer Studio ([CCS](http://www.ti.com/tool/CCSTUDIO)) e [git](https://git-scm.com/).
+Será necessário o Code Composer Studio ([CCS](http://www.ti.com/tool/CCSTUDIO)) e o [git](https://git-scm.com/).
 
 Existem dois métodos para configurar o ambiente: 1.1) Pendrive Live com tudo configurado; 1.2) instalação no Linux.
 
