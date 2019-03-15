@@ -17,6 +17,7 @@ Depois é só bootar pelo pendrive² e ao logar o ambiente de desenvolvimento es
 Porém, não deixe de fazer o update/updgrade do Mint. Faça isso antes da aula:
 
 Atualize os repositórios do Linux Mint com o comando: sudo apt-get update 
+
 Atualize o Linux Mint com o comando: sudo apt-get upgrade 
 
 ¹ mfrata: estou tentando encontrar uma forma de reduzir o tamanho da imagem. O tamanho ocupado dela é de apenas 5.6GB, entretanto ela ocupa 16GB descompacatada por causa do tamanho do dispositivo que ela foi gravada originalmente.
