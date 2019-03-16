@@ -12,6 +12,7 @@ PROCESS_THREAD(hello_world_process, ev, data)
 
   /* Insira o codigo aqui */
 
+  printf("Hello, World! \r\n");
   
   /************************/
 
