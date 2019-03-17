@@ -1,3 +1,4 @@
 [submodule "contiki"]
 	path = contiki
 	url = https://github.com/eel7515/contiki
+    branch = master
