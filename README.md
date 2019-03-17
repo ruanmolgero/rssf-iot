@@ -48,7 +48,7 @@ A interface gráfica travou no fim da instalação, porém a mesma foi concluíd
 
 ### 3 Clonando o Repositorio
 
-`git clone https://github.com/eel7515/rssf-iot --shallow-submodules --recurse-submodules`
+`git clone https://github.com/eel7515/rssf-iot --recursive`
  
  ou
  
@@ -56,4 +56,4 @@ A interface gráfica travou no fim da instalação, porém a mesma foi concluíd
  
  `git submodule init`
  
- `git submodule update --depth 1`
+ `git submodule update`
