@@ -12,7 +12,7 @@ PROCESS_THREAD(hello_world_process, ev, data)
 
   /* Insira o codigo aqui */
 
-  
+ printf("Figueira Maior do Estado\n");
   /************************/
 
   PROCESS_END();
