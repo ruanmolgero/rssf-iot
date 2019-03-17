@@ -48,11 +48,13 @@ A interface gráfica travou no fim da instalação, porém a mesma foi concluíd
 
 ### 3 Clonando o Repositorio
 
-`git clone https://github.com/eel7515/rssf-iot --recursive`
+Crie uma conta no github. Faça um [fork](https://help.github.com/en/articles/fork-a-repo) deste repositorio. Substitua `<seu_usuario>` nos links abaixo
+
+`git clone https://github.com/<seu_usuario>/rssf-iot --recursive`
  
  ou
  
- `git clone https://github.com/eel7515/rssf-iot`
+ `git clone https://github.com/<seu_usuario>/rssf-iot`
  
  `git submodule init`
  
