@@ -14,6 +14,7 @@ include $(CONTIKI)/Makefile.include
 
 CC_PREFIX = /opt/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin
 #CC_PREFIX = /opt/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major/bin
+#CC_PREFIX = /opt/ti/ccsv9/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major/bin
 CC      = $(CC_PREFIX)/arm-none-eabi-gcc
 CPP     = $(CC_PREFIX)/arm-none-eabi-cpp
 LD      = $(CC_PREFIX)/arm-none-eabi-gcc
