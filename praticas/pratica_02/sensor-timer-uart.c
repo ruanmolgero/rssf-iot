@@ -36,8 +36,8 @@ PROCESS_THREAD(sensor_process, ev, data)
 
         int val = batmon_sensor.value(BATMON_SENSOR_TYPE_TEMP); // lê sensor
 
-        /* Insira seu código aqui */
-
+        buffer[buf_c++] = val;
+        buf_c &= 0x07;
 
 
         printf("Leu %d\n", val);
@@ -52,13 +52,13 @@ PROCESS_THREAD(uart_process, ev, data)
 {
   PROCESS_BEGIN();
 
-  /* Insira seu código aqui */
+  etimer_set(&et_uart, 10*CLOCK_SECOND); // a cada 10 segundos
 
   while(1) {
     PROCESS_WAIT_EVENT();
     if(ev == PROCESS_EVENT_TIMER)  // se passaram 10 segundos
     {
-        /* Insira seu código aqui */
+        etimer_reset(&et_uart);  // reinicia timer
 
         int avg = 0;
         for(int i=0;i<BUF_SIZE;i++) {
