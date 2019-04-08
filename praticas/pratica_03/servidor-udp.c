@@ -1,16 +1,10 @@
-#include "contiki.h"
-// #include "contiki-lib.h"
-#include "contiki-net.h"
-#include "net/rpl/rpl.h"
-// #include "dev/leds.h"
-
-
-// #include <string.h>
-
+#include <contiki.h>
+#include <contiki-net.h>
+#include <net/rpl/rpl.h>
+// #include <dev/leds.h>
 #include <stdio.h>
 
 #include "utils.h"
-#include "pratica03.h"
 
 static struct uip_udp_conn *server_conn;
 
