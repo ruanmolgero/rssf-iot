@@ -55,16 +55,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
   while(status != RESOLV_STATUS_CACHED)
   {
       status = set_connection_address(&ipaddr, UDP_CONNECTION_ADDR);
-
-      if(status == RESOLV_STATUS_RESOLVING)
-      {
-          PROCESS_WAIT_EVENT();
-      }
-      else if(status != RESOLV_STATUS_CACHED)
-      {
-          printf("Nao foi possivel obter um IPv6 do servidor.\r\n");
-          PROCESS_WAIT_EVENT();
-      }
+      PROCESS_WAIT_EVENT();
   }
   // Se não utilizar mDNS, use a linha abaixo para registrar IPv6 destino
   // uip_ip6addr(&ipaddr, 0xfe80, 0, 0, 0, 0x215, 0x2000, 0x0002, 0x2145);
