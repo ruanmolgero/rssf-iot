@@ -58,29 +58,37 @@ static void leds_udp_handler(void)
     int succeded = 1;
     switch(payload.comando.led)
     {
-        /*** Inspire-se no trecho do código do cliente
-         *** que modifica os LEDs da placa para implementar
-         *** esta parte do programa.
-         ***/
         case 0: //verde
-            /*** COLOQUE AQUI SEU CÓDIGO
-             ***   Modifique o estado do LED verde
-             ***   conforme o comando recebido (cmd)
-             ***/
+            if (payload.comando.cmd == 0) {
+                leds_off(LEDS_GREEN);
+            } else if (payload.comando.cmd == 1) {
+                leds_on(LEDS_GREEN);
+            } else {
+                leds_toggle(LEDS_GREEN);
+            }
             break;
 
         case 1: //vermelho
-            /*** COLOQUE AQUI SEU CÓDIGO
-             ***   Modifique o estado do LED vermelho
-             ***   conforme o comando recebido (cmd)
-             ***/
+            if (payload.comando.cmd == 0) {
+                leds_off(LEDS_RED);
+            } else if (payload.comando.cmd == 1) {
+                leds_on(LEDS_RED);
+            } else {
+                leds_toggle(LEDS_RED);
+            }
             break;
 
         case 2: //ambos
-            /*** COLOQUE AQUI SEU CÓDIGO
-             ***   Modifique o estado de todos os LEDs
-             ***   conforme o comando recebido (cmd)
-             ***/
+            if (payload.comando.cmd == 0) {
+                leds_off(LEDS_GREEN);
+                leds_off(LEDS_RED);
+            } else if (payload.comando.cmd == 1) {
+                leds_on(LEDS_GREEN);
+                leds_on(LEDS_RED);
+            } else {
+                leds_toggle(LEDS_GREEN);
+                leds_toggle(LEDS_RED);
+            }
             break;
 
         default:
